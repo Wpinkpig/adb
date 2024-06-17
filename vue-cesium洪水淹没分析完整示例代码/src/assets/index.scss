@@ -1,0 +1,55 @@
+/* 地图操作时加载默认样式 */
+.layout-tool-template {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.7);
+  min-width: 200px;
+  max-width: 600px;
+
+  &>span:nth-child(1) {
+    font-size: 18px;
+    font-weight: 600
+  }
+
+  .closerModel {
+    text-decoration: none;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 20;
+
+    &:after {
+      // content: "";
+      content: "\e60b";
+      cursor: pointer;
+      font-family: "iconfont";
+      font-size: 22px;
+      color: rgba($color: gray, $alpha: 0.6);
+    }
+  }
+
+  .switchModel {
+    text-decoration: none;
+    position: absolute;
+    top: 8px;
+    right: 38px;
+    z-index: 20;
+
+    &:after {
+      content: "\e661";
+      cursor: pointer;
+      font-family: "iconfont";
+      font-size: 22px;
+      color: rgba($color: gray, $alpha: 0.6);
+    }
+  }
+
+  .splitline {
+    height: 4px;
+    background-color: rgba(29, 164, 220, 0.6);
+    margin: 8px 2px;
+
+  }
+}
